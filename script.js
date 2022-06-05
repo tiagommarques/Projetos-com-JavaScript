@@ -143,13 +143,8 @@ let pessoa3 = new Pessoa('Francisco', 15, 1.65);
 console.log('Pessoa 3:', pessoa3);
 console.log(' ');
 
-//Aprendendo a usar Operadores!
-//Operadores de comparação: ==, ===, !=, !==, >, <, >=, <=
-//Operadores de lógica: &&, ||, !
-//Operadores Bitwise: &, |, ^, ~, <<, >>
-//Operadores de Incremento e Decremento: ++, --
-
 console.log('> Operadores');
+
 //Operadores aritméticos: +, -, *, /, %, **
 console.log('Operadores aritméticos:');
 let salario = 1000;
@@ -187,44 +182,23 @@ contador = 20;
 console.log('Contador:', --contador);
 console.log(' ');
 
+console.log('Operadores de igualdade:');
+//Operadores de igualdade: ==, ===, !=, !==
+//Igualdade estrita: ===
+console.log('Igualdade estrita: ===')
+console.log(1 === 1);
+console.log(1 === '1');
 
+//Igualdade solta: ==
+console.log('Igualdade solta: ==')
+console.log(1 == 1);
+console.log(1 == '1');
+console.log(' ');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log('Operador ternário: ?');
+//Operador ternário: ?
+console.log('Exemplo: Empresa IT.com, pussui 300 clientes!');
+console.log('Empresa Premium: acima de 150 clientes, caso contrário, é comum.');
+let clientes = 300;
+let tipo = clientes > 150 ? 'Premium' : 'Comum';
+console.log('Empresa IT.com é do tipo:', tipo);
