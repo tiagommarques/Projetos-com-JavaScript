@@ -143,6 +143,7 @@ let pessoa3 = new Pessoa('Francisco', 15, 1.65);
 console.log('Pessoa 3:', pessoa3);
 console.log(' ');
 
+//Aprendendo a usar Operadores!
 console.log('> Operadores');
 
 //Operadores aritméticos: +, -, *, /, %, **
@@ -202,3 +203,60 @@ console.log('Empresa Premium: acima de 150 clientes, caso contrário, é comum.'
 let clientes = 300;
 let tipo = clientes > 150 ? 'Premium' : 'Comum';
 console.log('Empresa IT.com é do tipo:', tipo);
+console.log(' ');
+
+console.log('Operadores Lógicos:');
+//Operadores Lógicos: &&, ||, !
+
+console.log('Operador Lógico AND(e): &&');
+//Retorna true se ambas as condições forem verdadeiras.
+console.log(true && true);
+console.log(true && false);
+
+let maiorDeIdade = true;
+let possuiCarteiraDeTrabalho = true;
+let podeTrabalhar = maiorDeIdade && possuiCarteiraDeTrabalho;
+console.log('Pode trabalhar:', podeTrabalhar);
+console.log(' ');
+
+console.log('OOperador OR(ou): ||');
+//Retorna true se uma das condições for verdadeira.
+console.log(true || true);
+console.log(true || false);
+console.log(false || false);
+
+maiorDeIdade = false;
+possuiCarteiraDeTrabalho = true;
+podeTrabalhar = maiorDeIdade || possuiCarteiraDeTrabalho;
+console.log('Pode trabalhar:', podeTrabalhar);
+console.log(' ');
+
+console.log('Operador NOT: !');
+//Retorna true se a condição for falsa.
+console.log(!true);
+console.log(!false);
+
+maiorDeIdade = false;
+possuiCarteiraDeTrabalho = false;
+podeTrabalhar = maiorDeIdade || possuiCarteiraDeTrabalho;
+console.log('Pode trabalhar:', podeTrabalhar);
+
+let candidatoRecusado = !podeTrabalhar;
+console.log('Candidato recusado:', candidatoRecusado);
+console.log(' ');
+
+console.log('Operadores Lógicos Não boleanos:');
+//Operadores Lógicos Não boleanos: &&, ||, !
+
+//falsy: false, 0, "", null, undefined, NaN (not a number)
+//truthy: qualquer coisa diferente de falsy
+
+let corPersonalizada = 'NaN';
+let corPersonalizada2 = 'amarelo';
+let corPerfil = corPersonalizada || corPersonalizada2;
+console.log('Cor personalizada:', corPerfil);
+
+corPersonalizada = 'verde';
+corPersonalizada2 = 'amarelo';
+corPerfil = corPersonalizada || corPersonalizada2;
+console.log('Cor personalizada:', corPerfil);
