@@ -260,3 +260,97 @@ corPersonalizada = 'verde';
 corPersonalizada2 = 'amarelo';
 corPerfil = corPersonalizada || corPersonalizada2;
 console.log('Cor personalizada:', corPerfil);
+console.log(' ');
+
+console.log('Desafio - Trocando o valor de uma variável');
+let c = 'azul';
+let d = 'verde';
+console.log('Cor atual C:', c);
+console.log('Cor atual D:', d);
+
+[c, d] = [d, c];
+
+console.log(' ');
+console.log('Cor atual C:', c);
+console.log('Cor atual D:', d);
+console.log(' ');
+
+//Aprendendo a usar expressões e operadores
+console.log('> Expressões e Operadores');
+console.log('* If e Else');
+//If e Else
+// Se a nota estiver entre 7 e 10, aprovado.
+// Se a nota festiver entre 4 e 6, recuperação.
+// Se a nota for menor que 4, reprovado.
+
+let nota = 6;
+let aluno = 'Tiago';
+console.log(aluno, 'tirou nota:', nota);
+
+if (nota >= 7) {
+    console.log('O aluno foi Aprovado!');
+}
+else if (nota >= 4) {
+    console.log('O aluno está em Recuperação!');
+}
+else {
+    console.log('O aluno foi Reprovado!');
+};
+console.log(' ');
+
+console.log('* Switch e Case');
+//Switch e Case
+//admin, user, gerente ou diretor
+let usuario = 'Tiago';
+let cargo = 'admin';
+console.log('Usuário:', usuario);
+console.log('Cargo:', cargo);
+let acesso = cargo;
+switch (acesso) {
+    case 'admin':
+        console.log('Bem-vindo Administrador!');
+        break;
+    case 'user':
+        console.log('Bem-vindo Usuário!');
+        break;
+    case 'gerente':
+        console.log('Bem-vindo Gerente!');
+        break;
+    case 'diretor':
+        console.log('Bem-vindo Diretor!');
+        break;
+    default:
+        console.log('Não tem permissão para acessar o sistema!');
+};
+console.log(' ');
+
+//Aprendendo a usar Laços de repetição / Loops
+console.log('> Laços de repetição / Loops');
+console.log('* For');
+for (let i = 1; i <= 5; i++) {
+    console.log('Estou Aprendendo', i);
+};
+console.log(' ');
+
+for (let i = 5; i >= 1; i--) {
+    console.log('Estou Aprendendo', i);
+};
+console.log(' ');
+for (let i = 1; i <= 5; i++) {
+    if (i % 2 !== 0) {
+        console.log('Estou Aprendendo', i);
+    }
+};
+console.log(' ');
+for (let i = 1; i <= 5; i++) {
+    if (i % 2 == 0) {
+        console.log('Estou Aprendendo', i);
+    }
+};
+console.log(' ');
+console.log('* While');
+
+
+
+
+
