@@ -336,18 +336,21 @@ for (let i = 5; i >= 1; i--) {
     console.log('Estou Aprendendo', i);
 };
 console.log(' ');
+
 for (let i = 1; i <= 5; i++) {
     if (i % 2 !== 0) {
         console.log('Estou Aprendendo', i);
     }
 };
 console.log(' ');
+
 for (let i = 1; i <= 5; i++) {
     if (i % 2 == 0) {
         console.log('Estou Aprendendo', i);
     }
 };
 console.log(' ');
+
 console.log('* While');
 
 
