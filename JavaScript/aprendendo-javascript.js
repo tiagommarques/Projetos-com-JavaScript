@@ -352,8 +352,159 @@ for (let i = 1; i <= 5; i++) {
 console.log(' ');
 
 console.log('* While');
+let i = 1;
+while (i <= 5) {
+    console.log('Estou Aprendendo', i);
+    i++;
+}
+console.log(' ');
+i=5;
+while (i >= 1) {
+    console.log('Estou Aprendendo', i);
+    i--;
+}
+console.log(' ');
+i=1;
+while (i <= 5) {
+    if (i % 2 !== 0) {
+        console.log('Estou Aprendendo', i);
+    }
+    i++;
+}
+console.log(' ');
+i=1;
+while (i <= 5) {
+    if (i % 2 == 0) {
+        console.log('Estou Aprendendo', i);
+    }
+    i++;
+}
+console.log(' ');
 
+console.log('* Do..While');
+i=1;
+do {
+    console.log('Estou Aprendendo', i);
+    i++;
+} while (i <= 5);
+console.log(' ');
+i=5;
+do {
+    console.log('Estou Aprendendo', i);
+    i--;
+} while (i >= 1);
+console.log(' ');
+i=1;
+do {
+    if (i % 2 !== 0) {
+        console.log('Estou Aprendendo', i);
+    }
+    i++;
+} while (i <= 5);
+console.log(' ');
+i=1;
+do {
+    if (i % 2 == 0) {
+        console.log('Estou Aprendendo', i);
+    }
+    i++;
+} while (i <= 5);
+console.log(' ');
 
+console.log('* For In');
+pessoa = {
+    nome: 'Tiago',
+    idade: 25
+};
+for (let chave in pessoa) {
+    console.log(chave, pessoa['nome']);
+};
+console.log(' ');
+const cores = ['azul', 'verde', 'amarelo', 'branco'];
+for (let indice in cores) {
+    console.log(indice, cores[indice]);
+};
+console.log(' ');
 
+console.log('* For Of');
+for (let cor of cores) {
+    console.log(cor);
+};
+console.log(' ');
 
+console.log('Desafio - Função que usa 2 numeros e retorna o maior entre eles:');
+console.log('Qual o mmaior número? 10 ou 12');
+function maior(a, b) {
+    if (a > b) {
+        return a;
+    }
+    else {
+        return b;
+    }
+};
+console.log(maior(10, 12));
+console.log(' ');
 
+console.log('Desafio - Função que usa 2 numeros e retorna o menor entre eles:');
+console.log('Qual o menor número? 10 ou 5');
+function menor(a, b) {
+    if (a < b) {
+        return a;
+    }
+    else {
+        return b;
+    }
+};
+console.log(menor(10, 5));
+console.log(' ');
+
+console.log('Desafio - Função que calcula a média entre 3 numeros:');
+console.log('Qual a média? 5,10 e 15');
+function media(a, b, c) {
+    return (a + b + c) / 3;
+}
+console.log(media(5, 10, 15));
+console.log(' ');
+
+console.log('Desafio - Função que calcula a maior número entre varios números:');
+let valorMaior = max(23, 45, 67, 89, 12, 34, 56, 78, 90);
+console.log('Qual o maior número? 23, 45, 67, 89, 12, 34, 56, 78, 90');
+console.log('O maior número é:', valorMaior);
+function max(...numeros) {
+    let maior = numeros[0];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] > maior) {
+            maior = numeros[i];
+        }
+    }
+    return maior;
+}
+console.log(' ');
+
+console.log('Desafio - Função que calcula o menor número entre varios números:');
+let valorMenor = min(103, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
+console.log('Qual o menor número? 103, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50');
+console.log('O menor número é:', valorMenor);
+function min(...numeros) {
+    let menor = numeros[0];
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] < menor) {
+            menor = numeros[i];
+        }
+    }
+    return menor;
+};
+console.log(' ');
+
+console.log('Desafio - Função que calcula o menor número entre 2 números:');
+console.log('Qual o menor número? 12 ou 9');
+valorMenor = min(12, 9);
+console.log('O menor número é:', valorMenor);
+function min(numero1, numero2) {
+    if (numero1 < numero2) {
+        return numero1;
+    }
+    else {
+        return numero2;
+    }
+}
