@@ -262,19 +262,6 @@ corPerfil = corPersonalizada || corPersonalizada2;
 console.log('Cor personalizada:', corPerfil);
 console.log(' ');
 
-console.log('Desafio - Trocando o valor de uma variável');
-let c = 'azul';
-let d = 'verde';
-console.log('Cor atual C:', c);
-console.log('Cor atual D:', d);
-
-[c, d] = [d, c];
-
-console.log(' ');
-console.log('Cor atual C:', c);
-console.log('Cor atual D:', d);
-console.log(' ');
-
 //Aprendendo a usar expressões e operadores
 console.log('> Expressões e Operadores');
 console.log('* If e Else');
@@ -431,80 +418,3 @@ for (let cor of cores) {
     console.log(cor);
 };
 console.log(' ');
-
-console.log('Desafio - Função que usa 2 numeros e retorna o maior entre eles:');
-console.log('Qual o mmaior número? 10 ou 12');
-function maior(a, b) {
-    if (a > b) {
-        return a;
-    }
-    else {
-        return b;
-    }
-};
-console.log(maior(10, 12));
-console.log(' ');
-
-console.log('Desafio - Função que usa 2 numeros e retorna o menor entre eles:');
-console.log('Qual o menor número? 10 ou 5');
-function menor(a, b) {
-    if (a < b) {
-        return a;
-    }
-    else {
-        return b;
-    }
-};
-console.log(menor(10, 5));
-console.log(' ');
-
-console.log('Desafio - Função que calcula a média entre 3 numeros:');
-console.log('Qual a média? 5,10 e 15');
-function media(a, b, c) {
-    return (a + b + c) / 3;
-}
-console.log(media(5, 10, 15));
-console.log(' ');
-
-console.log('Desafio - Função que calcula a maior número entre varios números:');
-let valorMaior = max(23, 45, 67, 89, 12, 34, 56, 78, 90);
-console.log('Qual o maior número? 23, 45, 67, 89, 12, 34, 56, 78, 90');
-console.log('O maior número é:', valorMaior);
-function max(...numeros) {
-    let maior = numeros[0];
-    for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] > maior) {
-            maior = numeros[i];
-        }
-    }
-    return maior;
-}
-console.log(' ');
-
-console.log('Desafio - Função que calcula o menor número entre varios números:');
-let valorMenor = min(103, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
-console.log('Qual o menor número? 103, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50');
-console.log('O menor número é:', valorMenor);
-function min(...numeros) {
-    let menor = numeros[0];
-    for (let i = 0; i < numeros.length; i++) {
-        if (numeros[i] < menor) {
-            menor = numeros[i];
-        }
-    }
-    return menor;
-};
-console.log(' ');
-
-console.log('Desafio - Função que calcula o menor número entre 2 números:');
-console.log('Qual o menor número? 12 ou 9');
-valorMenor = min(12, 9);
-console.log('O menor número é:', valorMenor);
-function min(numero1, numero2) {
-    if (numero1 < numero2) {
-        return numero1;
-    }
-    else {
-        return numero2;
-    }
-}
